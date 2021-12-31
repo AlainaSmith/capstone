@@ -1,0 +1,44 @@
+#soloForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 98, 146, 0.733);
+    border: 2px solid black;
+    padding: 75px;
+    box-sizing:border-box;
+    margin: 40px;
+    border-radius: 50px;
+    
+}
+
+.jarrodSolo{
+    background-color: rgb(248, 221, 179);
+    width: 375px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -10px;
+}
+
+
+form {
+    background-color: rgb(233, 218, 87);
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 80px;
+    padding: 10px;
+    margin-top: 50px;    /*this distances the start of the form from the bottom of the header*/
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}

@@ -1,0 +1,96 @@
+Make a login Page:
+DataBase
+
+User personal information
+	userId
+	firstName
+	lastName 
+	userEmail
+	userPassword
+
+
+
+
+[
+    {
+      "id": 1,
+      "title": "#1 Rated Solo",
+      "video" : "https://youtu.be/CWj_LvcdUW4"
+    },
+    
+    {
+      "id": 2,
+      "title": "#2 Rated Solo",
+      "video" : "https://youtu.be/2hU4QUSWHxw"
+    },
+    {
+      "id": 3,
+      "title": "#3 Rated Solo",
+      "video" : "https://youtu.be/2hU4QUSWHxw"
+      
+    }
+]
+
+
+
+
+[
+    {
+      "id": 1,
+      "title": "Jarrod",
+      "imageURL" : "https://www.gratefulweb.com/sites/default/files/inline-images/226623597_10158976814599667_2777253126365666503_n.jpg"
+    },
+    
+    {
+      "id": 2,
+      "title": "Royal Masot",
+      "imageURL" : "https://www.gratefulweb.com/sites/default/files/inline-images/233666119_10158976813664667_6147475517192236520_n.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Billy Strings",
+      "imageURL" : "https://www.gratefulweb.com/sites/default/files/images/articles/C510DC59-34C0-443D-9989-7E33BAC402D2.jpeg"
+      
+    },
+    {
+        "id": 4,
+        "title": "Billy Failing",
+        "imageURL" : "https://images.genius.com/7f6e4151f398280037c628a71eb0c8f1.873x873x1.jpg"
+        
+      }
+]
+
+
+
+
+
+
+// const bandMembers = require(`./db.json`)
+// let globalId = 4
+
+//    module.exports = {
+//     getBandMembers: (req, res)=> {   
+//            res.status(200).send(bandMembers)},
+
+//     createMusicEntry: (req, res) => {
+//             const{title, video} =req.body
+//             let newMusicEntry = { title, video, id: globalId}
+//             bandMembers.push(newMusicEntry)
+//             res.status(200).send(newMusicEntry)
+//             globalId++
+//         },
+
+        
+//     }
+
+
+
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
