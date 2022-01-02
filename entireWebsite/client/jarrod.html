@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = 'stylesheet' href = 'jarrod.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <main>
+      <section>
+        <div id = 'clickers'>
+        <ol>
+          <a href="./fullBand.html" class = 'navbutton'>Musician Homepage</a></li>
+          <a href="./royal.html" class = 'navbutton'>Masat</a></li>
+          <a href="./Contact.html" class = 'navbutton'>Apostol</a></li>
+          <a href="./Contact.html" class = 'navbutton'>Failing</a></li>
+        </ol>
+      </div>
+
+
+      <header>
+        Jarrod Walker - Mandolin
+      </header>
+
+
+      <div class = "twoSoloVideos">
+      <section id = "soloUno">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tENRaA1ILTg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    </section>
+
+
+
+    <section id ="soloTwo">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EMxmq6xcuSw?controls=0&amp;start=3" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </div>
+
+  
+
+<div class = "uploadSoloContainer">
+  <form id = 'videoUpload'>
+    <h3>Upload your favorite solo here</h3>
+    <input type='text'
+    id="title" 
+    placeholder="title of video"
+    style="width:250px"/>
+
+    <input type='text'
+          id="video"
+          placeholder='video URL'
+          style="width:190px"/>
+
+          <button id ="jarrodSubmitButton"> Submit Solo</button>
+  </form>
+</div>
+
+
+
+
+  <!-- <div class = "uploadContainer"> -->
+    Upload your favorite solo here
+        <!-- <form> -->
+          <!-- <div class = "soloEntryRow">
+            <input 
+              type='text'
+              id="title"
+              placeholder="title of video"
+              style="width:190px"
+            />
+            <br>
+            <input 
+              type='text'
+              id="video"
+              placeholder='video URL'
+              style="width:190px"
+            />
+            <br>
+
+            <button id ="jarrodSubmitButton"> Submit Solo</button> -->
+        <!-- </form> -->
+      </div>
+  </div>
+</form>
+
+       <section class="soloEntry">
+         <div id = "bigBoxAroundText">
+            <div id = "videoText">Your video here</div>
+            <button id="deleteSoloButton">Delete</button>
+
+          
+         </div>
+       </section>
+
+      
+       <section id = "soloForm"></section>
+      </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./jarrodMain.js"></script>
+</body>
+</html>
