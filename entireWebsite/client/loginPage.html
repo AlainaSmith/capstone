@@ -10,55 +10,68 @@
 <body>
 <main>
 
+   
 
     <center><div id="borderOne"></div></center> 
     <center><div id="borderTwo"></div></center> 
 
-    <div id = "containerOne">
-        <h1>Fan Login</h1>
-    <form id = 'loginForm'>
-      <input type='text'
-      id="loginEmail" 
-      placeholder="Email"
-      style="width:190px"/>
-
-      <input type='text'
-            id="loginPassword"
-            placeholder='Password'
-            style="width:190px"/>
-    </form>
-</div>
-    <a href = "./fullBand.html" id = "loginButton">Login</a>
+ 
+   
 
 
-    <div id = "containerTwo">
-    <h2>Create an Account</h2>
-    <form id = 'createAccountForm'>
-        <input type='text'
-        id="createAccountFirstName" 
-        placeholder="First Name"
-        style="width:190px"/>
+    <div class = "loginForm">
+        <form id = 'loginLog'>
+         
+          <input type='text'
+          id="firstName" 
+          placeholder="Username"
+          style="width:190px"/>
+      
+          <input type='text'
+                id="lastName"
+                placeholder='Password'
+                style="width:190px"/>
 
-        <input type='text'
-              id = 'createAccountLastName'
-              placeholder='Last Name'
-              style="width:190px"/>
+            </form>
+            <a href = "./fullBand.html" id = "loginButton">Login</a>
+        </div>
+        
+        
+        
 
-        <input type='text'
-              id="createAccountEmail"
-              placeholder='Email Address'
-              style="width:190px"/>
+    <div class = "createAccountForm">
+        <form id = 'createAccount'>
+          <h3>Create an Account</h3>
+          <input type='text'
+          id="createAccountFirstName" 
+          placeholder="First Name"
+          style="width:190px"/>
+      
+          <input type='text'
+                id="createAccountLastName"
+                placeholder='Last Name'
+                style="width:190px"/>
+      
+          <input type='text'
+                    id="createAccountEmail"
+                    placeholder='Email Address'
+                    style="width:190px"/>
+      
+          <input type='text'
+                    id="createAccountPassword"
+                    placeholder='Password'
+                    style="width:190px"/>
+      
+            <button id ="createButton">Create Account</button>
+        </form>
+      </div>
 
-        <input type='text'
-              id="createAccountPassword"
-              placeholder='Password'
-              style="width:190px"/>
 
-        <button id ="createButton">Create Account</button>
-      </form>
+      <h1>Fan Login</h1>
 
-</div>
-
+      <!-- <img id = 'flora' src = "./instruments/rose.png" alt = "vine" 
+      height= "500"
+      width= "820"/> -->
      
         <img id = 'billyLogo' src = "./instruments/billylogo.png" alt = "logo" 
         height= "175"
@@ -69,9 +82,6 @@
 </div>
 
       <div class = "albumPhotos">
-      <!-- <img id = 'billy1' src = "./instruments/billy1.png" alt = "1" 
-      height= "175"
-      width= "275"/> -->
 
       <img id = 'billy2' src = "./instruments/billy2.png" alt = "2" 
       height= "175"
@@ -86,6 +96,17 @@
       width= "275"/>
 
     </div>
+
+
+
+    
+<!-- <div class= "floraa">
+    <img id = 'floral' src = "./instruments/floral.png" alt = "flora" 
+    height= "300"
+    width= "520"/>
+</div> -->
+
+
 </main>
     
 <script src="../node_modules/axios/dist/axios.min.js"></script>

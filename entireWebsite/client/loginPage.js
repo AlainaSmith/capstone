@@ -11,7 +11,7 @@ const createAccountPasswordInput = document.querySelector('#createAccountPasswor
 
 
 function getLoginInfo() {
-    axios.get('http://localhost:3210/user') 
+    axios.get('http://localhost:4400/user') 
         .then(res => {
             const user = res.data[0]
 

@@ -1,9 +1,15 @@
 const jarrodSoloEntry = require(`./jarrodDb.json`)
-let globalId = 4
+let globalId = 3
 
    module.exports = {
-    getJarrodSoloEntry: (req, res)=> {   
-           res.status(200).send(jarrodSoloEntry)},
+    getJarrodSoloEntry: (req, res)=> { 
+        for(i = 0; i < jarrodSoloEntry.length; i++){
+             if(jarrodSoloEntry[i].id + "" === "3"){   //if this id is equal to the one that i am looking for, then we delete.
+                console.log(jarrodSoloEntry[i])  
+           res.status(200).send(jarrodSoloEntry[i])
+        }
+    }
+    },
 
     createJarrodSoloEntry: (req, res) => {
             const{title, video} =req.body

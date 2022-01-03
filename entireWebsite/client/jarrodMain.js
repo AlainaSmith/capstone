@@ -1,6 +1,7 @@
 const videoUpload = document.querySelector('#videoUpload')
 const jarrodSubmitButton = document.querySelector('#jarrodSubmitButton')
 const deleteSoloButton = document.querySelector('#deleteSoloButton')
+const soloForm = document.querySelector('#soloForm')
 
 const form = document.querySelector('form')
 const baseURL = `http://localhost:4400/api/jarrodSoloEntry`
@@ -11,21 +12,24 @@ const jarrodSoloEntryCallback = ({ data: jarrodSoloEntry }) => {
    }
 const errCallback = err => console.log(err)
 
-const getJarrodSoloEntry = () => 
+const getJarrodSoloEntry = () => {
+console.log("getJarrodsoloentry")
 axios.get(baseURL)
 .then(jarrodSoloEntryCallback)
 .catch(errCallback)
-
-const createJarrodSoloEntry = (body) => 
+}
+const createJarrodSoloEntry = (body) => {
+console.log('createJarrodsoloentry')
 axios.post(baseURL, body)
 .then(jarrodSoloEntryCallback)
 .catch(errCallback)
-
-const deleteJarrodSoloEntry = (id) =>
+}
+const deleteJarrodSoloEntry = (id) => {
+    console.log('deleteJarrod')
 axios.delete(`${baseURL}/${id}`)
 .then(jarrodSoloEntryCallback)
 .catch(errCallback)
-
+}
 
 function submitHandler(e) {
     e.preventDefault()
@@ -42,25 +46,27 @@ let video = document.querySelector('#video')
     title.value = ''
     video.value = ''
 
-    // getJarrodSoloEntry()
+    getJarrodSoloEntry()
 }
 
 
-// function createJarrodSolo(solo) {
-//     const jarrodSolo = document.createElement('div')
-//     jarrodSolo.classList.add('jarrod-solo')
+function createJarrodSolo(solo) {
+    console.log(solo)
+    const jarrodSolo = document.createElement('div')
+    jarrodSolo.classList.add('jarrod-solo')
+    console.log(jarrodSolo)
+    jarrodSolo.innerHTML = `<video alt='solo of jarrod' src=${solo.video} class="jarrod-video"/>
+    <p class="solo-title">${solo.title}</p>
+    <br>
+    <div class="soloDisplay">
+    <button onclick="deleteJarrodSoloEntry(${solo.id})">Delete</button>
+    </div>
 
-//     jarrodSolo.innerHTML = `<video alt='solo of jarrod' src=${solo.video} class="jarrod-video"/>
-//     <p class="solo-title">${solo.title}</p>
-//     <br>
-//     <div class="soloForm">
-//     <button onclick="deleteJarrodSoloEntry(${solo.id})">Delete</button>
-//     </div>
+`
 
-// `
-
-//     soloForm.appendChild(jarrodSolo)
-// }
+    soloForm.appendChild(jarrodSolo)
+    console.log(soloForm)
+}
 
 function displayJarrodSoloEntry(arr) {
     console.log('hit display jarrod solo')

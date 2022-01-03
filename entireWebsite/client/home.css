@@ -17,15 +17,22 @@ body {
   animation: rotation 7s infinite linear;
   position:relative;
   bottom: 200px;
-  font-size: 60px;
+  font-size: 40px;
   animation-direction: alternate;
-  color: rgb(230, 45, 168);
-  background-color: white;
-  border: white;
-}
+  color:rgb(5, 5, 5);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 6rem;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    border-radius: 10px
+  }
+
 
 #magicLink:hover{
-  color:rgb(75, 35, 216);
+  color:rgb(228, 238, 228);
   
 }
 
@@ -126,9 +133,9 @@ body {
     -webkit-transform: translateY(1000%);
     transform: translateY(1000%);
     
-    -moz-animation: my-animation 34s linear infinite;
-    -webkit-animation: my-animation 34s linear infinite;
-    animation: my-animation 34s linear infinite;
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
   }
   
   
