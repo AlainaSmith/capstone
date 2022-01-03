@@ -40,41 +40,49 @@
 
   
 
-<div class = "uploadSoloContainer">
-  <form id = 'videoUpload'>
-    <h3>Upload your favorite solo here</h3>
-    <input type='text'
-    id="title" 
-    placeholder="title of video"
-    style="width:250px"/>
-
-    <input type='text'
-          id="video"
-          placeholder='video URL'
-          style="width:190px"/>
-
-          <button id ="jarrodSubmitButton"> Submit Solo</button>
-  </form>
-</div>
-
-      </div>
+  <div class = "uploadSoloContainer">
+    <form id = 'videoUpload'>
+      <h3>Upload your favorite solo here and view the video below
+        
+      </h3>
+      <input type='text'
+      id="title" 
+      placeholder="title of video"
+      style="width:250px"/>
+  
+      <input type='text'
+            id="video"
+            placeholder='video URL'
+            style="width:190px"/>
+  
+            <button id ="jarrodSubmitButton"> Submit Solo</button>
+    </form>
   </div>
-</form>
-
-       <section class="soloEntry">
-         <div id = "bigBoxAroundText">
-            <div id = "videoText">Your video here</div>
-            <button id="deleteSoloButton">Delete</button>
-
-          
-         </div>
-       </section>
-
-      
+  
+  <h2>The top two videos are the highest rated solos submitted by other users. 
+    <br>
+    Once uploaded, your video has 1 week to be upvoted by others for the chance to be displayed on top, 
+    <br>
+    otherwise, it will remain below in the order of votes it recieves.
+    Top voted or not, we're all here to enjoy the music from the boys we love the most! 
+    Happy Groovin!</h2>
+  
+    
+         <section class="soloEntry">
+           <div id = "bigBoxAroundText">
+              <div id = "videoText">Your video here</div>
+              <button id="deleteSoloButton">Delete</button>
+  
+            
+           </div>
+         </section>
+  
+    
+         <section id = "soloForm"></section>
     
       </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./jarrodMain.js"></script>
+    <script src="./royalMain.js"></script>
 </body>
 </html>

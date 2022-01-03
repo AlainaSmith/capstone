@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json()); 
 
 
-const ctrl = require('./jarrodController.js')
+const ctrl = require('./royalController.js')
 
 app.get(`/api/jarrodSoloEntry`, ctrl.getJarrodSoloEntry)
 app.post(`/api/jarrodSoloEntry`, ctrl.createJarrodSoloEntry)
@@ -40,4 +40,3 @@ app.delete(`/api/jarrodSoloEntry/:id`, ctrl.deleteJarrodSoloEntry)
 
 
 app.listen(4400, () => console.log("Commencing countdown, engines on...4400"));
-

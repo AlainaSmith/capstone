@@ -1,4 +1,4 @@
-const jarrodSoloEntry = require(`./jarrodDb.json`)
+const jarrodSoloEntry = require(`./royalDb.json`)
 let globalId = 3
 
    module.exports = {
@@ -26,6 +26,3 @@ let globalId = 3
             }
         }
     }
-
-
-
